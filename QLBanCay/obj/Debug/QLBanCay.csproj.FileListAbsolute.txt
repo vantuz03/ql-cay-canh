@@ -1,0 +1,10 @@
+D:\C#\QLBanCay\QLBanCay\bin\Debug\QLBanCay.exe.config
+D:\C#\QLBanCay\QLBanCay\bin\Debug\QLBanCay.exe
+D:\C#\QLBanCay\QLBanCay\bin\Debug\QLBanCay.pdb
+D:\C#\QLBanCay\QLBanCay\obj\Debug\QLBanCay.csproj.AssemblyReference.cache
+D:\C#\QLBanCay\QLBanCay\obj\Debug\QLBanCay.Form1.resources
+D:\C#\QLBanCay\QLBanCay\obj\Debug\QLBanCay.Properties.Resources.resources
+D:\C#\QLBanCay\QLBanCay\obj\Debug\QLBanCay.csproj.GenerateResource.cache
+D:\C#\QLBanCay\QLBanCay\obj\Debug\QLBanCay.csproj.CoreCompileInputs.cache
+D:\C#\QLBanCay\QLBanCay\obj\Debug\QLBanCay.exe
+D:\C#\QLBanCay\QLBanCay\obj\Debug\QLBanCay.pdb

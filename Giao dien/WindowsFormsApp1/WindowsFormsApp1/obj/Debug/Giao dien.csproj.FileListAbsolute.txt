@@ -1,0 +1,10 @@
+D:\Giao dien\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Giao dien\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Giao dien\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Giao dien\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Giao dien.csproj.AssemblyReference.cache
+D:\Giao dien\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\Giao dien\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Giao dien\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Giao dien.csproj.GenerateResource.cache
+D:\Giao dien\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache
+D:\Giao dien\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Giao dien\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

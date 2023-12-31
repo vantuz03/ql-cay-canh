@@ -18,3 +18,13 @@ C:\Users\Van Tu\Downloads\Giao dien\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\
 C:\Users\Van Tu\Downloads\Giao dien\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache
 C:\Users\Van Tu\Downloads\Giao dien\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Van Tu\Downloads\Giao dien\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Van Tu\Downloads\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Van Tu\Downloads\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Van Tu\Downloads\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Van Tu\Downloads\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Giao dien.csproj.AssemblyReference.cache
+C:\Users\Van Tu\Downloads\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Van Tu\Downloads\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Van Tu\Downloads\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Giao dien.csproj.GenerateResource.cache
+C:\Users\Van Tu\Downloads\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache
+C:\Users\Van Tu\Downloads\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Van Tu\Downloads\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

@@ -28,3 +28,10 @@ C:\Users\Van Tu\Downloads\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\
 C:\Users\Van Tu\Downloads\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache
 C:\Users\Van Tu\Downloads\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Van Tu\Downloads\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Giao dien.csproj.AssemblyReference.cache
+D:\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Giao dien.csproj.GenerateResource.cache
+D:\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache
+D:\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\QuanLyCay\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

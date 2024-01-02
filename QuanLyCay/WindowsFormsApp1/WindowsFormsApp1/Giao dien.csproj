@@ -53,6 +53,36 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForm1.Designer.cs">
+      <DependentUpon>NewForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForm2.Designer.cs">
+      <DependentUpon>NewForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForm3.Designer.cs">
+      <DependentUpon>NewForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForm4.Designer.cs">
+      <DependentUpon>NewForm4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForm5.Designer.cs">
+      <DependentUpon>NewForm5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

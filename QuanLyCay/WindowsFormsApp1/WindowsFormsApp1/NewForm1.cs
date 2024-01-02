@@ -16,5 +16,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void btnAddTree_Click(object sender, EventArgs e)
+        {
+            NewForm2 formAdd = new NewForm2();
+            formAdd.ShowDialog();
+        }
     }
 }

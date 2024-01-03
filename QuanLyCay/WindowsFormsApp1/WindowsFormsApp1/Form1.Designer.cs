@@ -144,7 +144,6 @@
             this.btnXoaPhieuNhap.TabIndex = 6;
             this.btnXoaPhieuNhap.Text = "Xóa";
             this.btnXoaPhieuNhap.UseVisualStyleBackColor = false;
-            this.btnXoaPhieuNhap.Click += new System.EventHandler(this.btnXoaPhieuNhap_Click);
             // 
             // btnSuaPhieuNhap
             // 
@@ -157,7 +156,6 @@
             this.btnSuaPhieuNhap.TabIndex = 6;
             this.btnSuaPhieuNhap.Text = "Sửa";
             this.btnSuaPhieuNhap.UseVisualStyleBackColor = false;
-            this.btnSuaPhieuNhap.Click += new System.EventHandler(this.btnSuaPhieuNhap_Click);
             // 
             // btnThemPhieuNhap
             // 
@@ -170,7 +168,6 @@
             this.btnThemPhieuNhap.TabIndex = 6;
             this.btnThemPhieuNhap.Text = "Thêm";
             this.btnThemPhieuNhap.UseVisualStyleBackColor = false;
-            this.btnThemPhieuNhap.Click += new System.EventHandler(this.btnThemPhieuNhap_Click);
             // 
             // dtpNgayNhap
             // 

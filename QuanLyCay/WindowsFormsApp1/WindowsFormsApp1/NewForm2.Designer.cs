@@ -29,8 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnTim = new System.Windows.Forms.Button();
             this.txtGiaBan = new System.Windows.Forms.TextBox();
-            this.cbLoaiCay = new System.Windows.Forms.ComboBox();
+            this.cbThemLoaiCay = new System.Windows.Forms.ComboBox();
             this.txtXuatXuCay = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.numSoLuong = new System.Windows.Forms.NumericUpDown();
@@ -39,9 +42,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtTenCay = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.btnTim = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).BeginInit();
             this.SuspendLayout();
@@ -52,7 +52,7 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnTim);
             this.panel1.Controls.Add(this.txtGiaBan);
-            this.panel1.Controls.Add(this.cbLoaiCay);
+            this.panel1.Controls.Add(this.cbThemLoaiCay);
             this.panel1.Controls.Add(this.txtXuatXuCay);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.numSoLuong);
@@ -66,6 +66,37 @@
             this.panel1.Size = new System.Drawing.Size(776, 426);
             this.panel1.TabIndex = 0;
             // 
+            // btnHuy
+            // 
+            this.btnHuy.Location = new System.Drawing.Point(301, 355);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(103, 36);
+            this.btnHuy.TabIndex = 23;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(166, 355);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 36);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Làm lại";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnTim
+            // 
+            this.btnTim.Location = new System.Drawing.Point(28, 355);
+            this.btnTim.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(103, 36);
+            this.btnTim.TabIndex = 21;
+            this.btnTim.Text = "Thêm mới";
+            this.btnTim.UseVisualStyleBackColor = true;
+            // 
             // txtGiaBan
             // 
             this.txtGiaBan.Location = new System.Drawing.Point(371, 109);
@@ -73,13 +104,13 @@
             this.txtGiaBan.Size = new System.Drawing.Size(153, 22);
             this.txtGiaBan.TabIndex = 20;
             // 
-            // cbLoaiCay
+            // cbThemLoaiCay
             // 
-            this.cbLoaiCay.FormattingEnabled = true;
-            this.cbLoaiCay.Location = new System.Drawing.Point(105, 64);
-            this.cbLoaiCay.Name = "cbLoaiCay";
-            this.cbLoaiCay.Size = new System.Drawing.Size(186, 24);
-            this.cbLoaiCay.TabIndex = 19;
+            this.cbThemLoaiCay.FormattingEnabled = true;
+            this.cbThemLoaiCay.Location = new System.Drawing.Point(105, 64);
+            this.cbThemLoaiCay.Name = "cbThemLoaiCay";
+            this.cbThemLoaiCay.Size = new System.Drawing.Size(186, 24);
+            this.cbThemLoaiCay.TabIndex = 19;
             // 
             // txtXuatXuCay
             // 
@@ -152,37 +183,6 @@
             this.label11.TabIndex = 14;
             this.label11.Text = "Tên cây:";
             // 
-            // btnTim
-            // 
-            this.btnTim.Location = new System.Drawing.Point(28, 355);
-            this.btnTim.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(103, 36);
-            this.btnTim.TabIndex = 21;
-            this.btnTim.Text = "Thêm mới";
-            this.btnTim.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(166, 355);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 36);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Làm lại";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Location = new System.Drawing.Point(301, 355);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(2);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(103, 36);
-            this.btnHuy.TabIndex = 23;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
-            // 
             // NewForm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -202,7 +202,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtGiaBan;
-        private System.Windows.Forms.ComboBox cbLoaiCay;
+        private System.Windows.Forms.ComboBox cbThemLoaiCay;
         private System.Windows.Forms.TextBox txtXuatXuCay;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown numSoLuong;

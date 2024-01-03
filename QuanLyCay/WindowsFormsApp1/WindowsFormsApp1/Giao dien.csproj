@@ -88,6 +88,15 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewForm1.resx">
+      <DependentUpon>NewForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm2.resx">
+      <DependentUpon>NewForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm3.resx">
+      <DependentUpon>NewForm3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

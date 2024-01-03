@@ -64,37 +64,36 @@ namespace WindowsFormsApp1
             dgvQuanLyHoaDon.DataSource = ds.Tables["HOADON"];
         }
 
-        private void loadCbLoaiCay()
-        {
-            MoKetNoi();
-
-            DataTable dt = new DataTable();
-            string query = "select * from LOAICAY";
-
-            adapter = new SqlDataAdapter(query, sqlCon);
-            adapter.Fill(dt);
-
-            cbLoaiCay.DisplayMember = "Tenloaicay";
-            cbLoaiCay.ValueMember = "Maloaicay";
-            cbLoaiCay.DataSource = dt;
-        }
-
         public NewForm1()
         {
             InitializeComponent();
+            HienThiDuLieuQLCay();
         }
 
         private void btnAddTree_Click(object sender, EventArgs e)
         {
             NewForm2 formAdd = new NewForm2();
+            formAdd.FormClosed += new FormClosedEventHandler(formAdd_FormClosed);
             formAdd.ShowDialog();
+        }
+
+        private void formAdd_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            HienThiDuLieuQLCay();
         }
 
         private void NewForm1_Load(object sender, EventArgs e)
         {
             HienThiDuLieuQLCay();
             HienThiDuLieuQLHoaDon();
-            loadCbLoaiCay();
+            
+            cbLoaiCay.Items.Clear();
+            cbLoaiCay.Items.Add("Cây Ăn Quả");
+            cbLoaiCay.Items.Add("Cây Cảnh");
+
+            cbLoaiHoaDon.Items.Clear();
+            cbLoaiHoaDon.Items.Add("Cây Ăn Quả");
+            cbLoaiHoaDon.Items.Add("Cây Cảnh");
         }
 
         private void dgvQuanLyCay_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -110,6 +109,95 @@ namespace WindowsFormsApp1
             infoCay[4] = row.Cells[5].Value.ToString();
             NewForm3 newForm3 = new NewForm3(infoCay);
             newForm3.Show();
+        }
+
+        private void btnTK_Click(object sender, EventArgs e)
+        {
+            string queryBase = "select Tenloaicay as [Loại Cây], Tencay as [Tên Cây], Soluong as [Số Lượng], Xuatxu as [Xuất Xứ], Giaban as [Giá Bán] from CAY, LOAICAY where CAY.Maloaicay = LOAICAY.Maloaicay ";
+            string queryCondition = "";
+            SqlCommand cmd = new SqlCommand();
+
+            if (!string.IsNullOrWhiteSpace(txtMaCay.Text) && int.TryParse(txtMaCay.Text, out int maCay))
+            {
+                queryCondition = "and CAY.Macay = @maCay";
+                cmd.Parameters.AddWithValue("@maCay", maCay);
+            }
+            else if (!string.IsNullOrWhiteSpace(txtTenCay.Text))
+            {
+                queryCondition = "and CAY.Tencay LIKE @tenCay";
+                cmd.Parameters.AddWithValue("@tenCay", "%" + txtTenCay.Text + "%");
+            }
+            else if (cbLoaiCay.SelectedIndex != -1)
+            {
+                queryCondition = "and LOAICAY.Tenloaicay = @loaiCay";
+                cmd.Parameters.AddWithValue("@loaiCay", cbLoaiCay.SelectedItem.ToString());
+            }
+
+            string finalQuery = queryBase + queryCondition;
+            cmd.CommandText = finalQuery;
+
+            DataTable dt = new DataTable();
+            using (SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QuanLyCay;Integrated Security=True"))
+            {
+                cmd.Connection = con;
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+
+            if (dt.Rows.Count > 0)
+            {
+                dgvQuanLyCay.DataSource = dt;
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy dữ liệu.");
+                dgvQuanLyCay.DataSource = null;
+            }
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string queryBase = "select Tenloaicay as [Loại Cây], Ngaynhap as [Ngày Nhập], Xuatxu as [Xuất Xứ], SDT as [Số Điện Thoại], Soluong as [Số Lượng] from LOAICAY, HOADON where HOADON.Maloaicay = LOAICAY.Maloaicay ";
+            string queryCondition = "";
+            SqlCommand cmd = new SqlCommand();
+
+            if (!string.IsNullOrWhiteSpace(txtMaHoaDon.Text) && int.TryParse(txtMaHoaDon.Text, out int maHoaDon))
+            {
+                queryCondition = "and Mahoadon = @maHoaDon";
+                cmd.Parameters.AddWithValue("@maHoaDon", maHoaDon);
+            }
+            else if (cbLoaiHoaDon.SelectedIndex != -1)
+            {
+                queryCondition = "and LOAICAY.Tenloaicay = @loaiCay";
+                cmd.Parameters.AddWithValue("@loaiCay", cbLoaiHoaDon.SelectedItem.ToString());
+            }
+
+            if (string.IsNullOrEmpty(queryCondition))
+            {
+                MessageBox.Show("Vui lòng nhập thông tin tìm kiếm.");
+                return;
+            }
+
+            string finalQuery = queryBase + queryCondition;
+            cmd.CommandText = finalQuery;
+
+            DataTable dt = new DataTable();
+            using (SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QuanLyCay;Integrated Security=True"))
+            {
+                cmd.Connection = con;
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+
+            if (dt.Rows.Count > 0)
+            {
+                dgvQuanLyHoaDon.DataSource = dt;
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy dữ liệu.");
+                dgvQuanLyHoaDon.DataSource = null;
+            }
         }
     }
 }

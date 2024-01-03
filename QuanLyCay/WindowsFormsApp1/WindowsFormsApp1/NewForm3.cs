@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,8 @@ namespace WindowsFormsApp1
     {
         public NewForm3()
         {
-            InitializeComponent();          
+            InitializeComponent();
+            
         }
 
         public NewForm3(string[] infoCay) : this()
@@ -58,5 +60,6 @@ namespace WindowsFormsApp1
             btnSua.Visible = false;
             btnCapNhat.Visible = true;
         }
+
     }
 }

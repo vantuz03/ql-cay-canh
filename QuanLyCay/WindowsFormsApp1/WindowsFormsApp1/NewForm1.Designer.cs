@@ -40,14 +40,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgvQuanLyCay = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMaHoaDon = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnTim = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dgvQuanLyHoaDon = new System.Windows.Forms.DataGridView();
+            this.cbLoaiHoaDon = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanLyCay)).BeginInit();
@@ -106,6 +104,7 @@
             this.btnTK.TabIndex = 7;
             this.btnTK.Text = "Tìm kiếm";
             this.btnTK.UseVisualStyleBackColor = true;
+            this.btnTK.Click += new System.EventHandler(this.btnTK_Click);
             // 
             // cbLoaiCay
             // 
@@ -177,12 +176,10 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.cbLoaiHoaDon);
+            this.tabPage2.Controls.Add(this.txtMaHoaDon);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.btnTim);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.txt);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.dgvQuanLyHoaDon);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
@@ -194,13 +191,13 @@
             this.tabPage2.Text = "Quản lí hóa đơn";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtMaHoaDon
             // 
-            this.textBox1.Location = new System.Drawing.Point(134, 37);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(198, 26);
-            this.textBox1.TabIndex = 16;
+            this.txtMaHoaDon.Location = new System.Drawing.Point(134, 37);
+            this.txtMaHoaDon.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtMaHoaDon.Name = "txtMaHoaDon";
+            this.txtMaHoaDon.Size = new System.Drawing.Size(198, 26);
+            this.txtMaHoaDon.TabIndex = 16;
             // 
             // label4
             // 
@@ -221,42 +218,17 @@
             this.btnTim.TabIndex = 14;
             this.btnTim.Text = "Tìm kiếm";
             this.btnTim.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(857, 37);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(198, 26);
-            this.textBox3.TabIndex = 11;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(776, 39);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 20);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Tên cây:";
-            // 
-            // txt
-            // 
-            this.txt.Location = new System.Drawing.Point(493, 38);
-            this.txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(198, 26);
-            this.txt.TabIndex = 9;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(418, 40);
+            this.label6.Location = new System.Drawing.Point(701, 39);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 20);
+            this.label6.Size = new System.Drawing.Size(85, 20);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Mã cây:";
+            this.label6.Text = "Loại Cây :";
             // 
             // dgvQuanLyHoaDon
             // 
@@ -270,6 +242,14 @@
             this.dgvQuanLyHoaDon.Size = new System.Drawing.Size(1250, 488);
             this.dgvQuanLyHoaDon.TabIndex = 7;
             // 
+            // cbLoaiHoaDon
+            // 
+            this.cbLoaiHoaDon.FormattingEnabled = true;
+            this.cbLoaiHoaDon.Location = new System.Drawing.Point(786, 37);
+            this.cbLoaiHoaDon.Name = "cbLoaiHoaDon";
+            this.cbLoaiHoaDon.Size = new System.Drawing.Size(201, 28);
+            this.cbLoaiHoaDon.TabIndex = 17;
+            // 
             // NewForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -279,7 +259,8 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "NewForm1";
-            this.Text = "NewForm1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "QUẢN LÝ BÁN CÂY";
             this.Load += new System.EventHandler(this.NewForm1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -307,12 +288,10 @@
         private System.Windows.Forms.Button btnTK;
         private System.Windows.Forms.Button btnAddTree;
         private System.Windows.Forms.Button btnTim;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dgvQuanLyHoaDon;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaHoaDon;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbLoaiHoaDon;
     }
 }
